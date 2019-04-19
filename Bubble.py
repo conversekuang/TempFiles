@@ -2,9 +2,12 @@
 # @Author: dell
 # @Date:   2019-04-17 16:42:29
 # @Last Modified by:   kzk
-# @Last Modified time: 2019-04-19 16:22:18
+# @Last Modified time: 2019-04-19 16:30:42
 
 def Bubble(arr):
+	"""
+	相邻的两个数进行比较，存在逆序则交换。大的数字在末尾，小的数字在开始
+	"""
 	max_index = len(arr)-1
 	for i in range(0,max_index):
 		for j in range(0,max_index - i):
@@ -16,6 +19,9 @@ def Bubble(arr):
 
 
 def Insertion(arr):
+	"""
+	数组分为以排序和未排序的两部分，
+	"""
 	for i in range(1, len(arr)):
 		tmp = arr[i]
 		j = 0		
@@ -34,7 +40,7 @@ def Insertion(arr):
 
 def Selection(arr):
 	"""
-	在选择最小的，
+	在选择最小的，进行交换
 	"""
 	for i in range(0, len(arr)-1):
 		index = i
@@ -56,3 +62,6 @@ if __name__ == '__main__':
 	# print Insertion(arr)
 	print Selection(arr)
 
+
+
+	
