@@ -2,9 +2,12 @@
 # @Author: dell
 # @Date:   2019-04-17 16:42:29
 # @Last Modified by:   kzk
-# @Last Modified time: 2019-04-17 16:56:24
+# @Last Modified time: 2019-04-19 16:30:42
 
 def Bubble(arr):
+	"""
+	相邻的两个数进行比较，存在逆序则交换。大的数字在末尾，小的数字在开始
+	"""
 	max_index = len(arr)-1
 	for i in range(0,max_index):
 		for j in range(0,max_index - i):
@@ -15,9 +18,50 @@ def Bubble(arr):
 	return arr
 
 
+def Insertion(arr):
+	"""
+	数组分为以排序和未排序的两部分，
+	"""
+	for i in range(1, len(arr)):
+		tmp = arr[i]
+		j = 0		
+		for j in range(i-1,-2,-1):  
+		#由于在java中判断j >=0 时满足条件会再-1，因此j的取值为-1，所以要到写至-2。
+		#这个调了很久，都不知道为啥，原来是在-1这里。
+			# print j
+			if arr[j] > tmp:
+				arr[j+1] = arr[j]						
+			else:
+				break
+		arr[j+1] = tmp
+	return arr
+
+
+
+def Selection(arr):
+	"""
+	在选择最小的，进行交换
+	"""
+	for i in range(0, len(arr)-1):
+		index = i
+		min_val = arr[i]
+		for j in range(i+1,len(arr)):
+			if arr[j] < min_val:
+				index = j
+				min_val = arr[j]
+		arr[index] = arr[i]
+		arr[i] = min_val
+	return arr
+
 
 
 
 if __name__ == '__main__':
-	arr = [11,7,4,3,5,2,0,8,9,1,99,2]
-	print Bubble(arr)
+	arr = [15,9,2,1,13,5,10]
+	# print Bubble(arr)
+	# print Insertion(arr)
+	print Selection(arr)
+
+
+
+	
