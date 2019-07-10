@@ -179,11 +179,19 @@
 
   ```python
   class Count:
+<<<<<<< HEAD
       def __init__(self, func):					#初始化传入修饰的函数
           self.func = func
           self.num_calls = 0
   
       def __call__(self, *args, **kwargs):		#带入函数
+=======
+      def __init__(self, func):
+          self.func = func
+          self.num_calls = 0
+  
+      def __call__(self, *args, **kwargs):
+>>>>>>> 1ab7f222a82343eb0bad24e5ddf8985d2a07c262
           self.num_calls += 1
           print('num of calls is: {}'.format(self.num_calls))
           return self.func(*args, **kwargs)
@@ -229,5 +237,9 @@
 
 - **日志记录**：需要得到每个函数的执行时间，在装饰器内记录执行实际函数的时间，并求差。
 - **参数合理性检查**：在机器学习需要输入大量参数，需要对其进行检查，否则出现参数不对而做的无用功。
+<<<<<<< HEAD
 - **缓存**：python3中 from functools import rlu_cache， 可以通过@lru_cahche来缓存函数的结果 lru_cache(maxsize=128, typed=False)。maxsize参数定义缓存大小，而typed定义的是不同类型是否认为是不同结果。
 
+=======
+- **缓存**：python3中 from functools import rlu_cache， 可以通过@lru_cahche来缓存函数的结果 lru_cache(maxsize=128, typed=False)。maxsize参数定义缓存大小，而typed定义的是不同类型是否认为是不同结果。
+>>>>>>> 1ab7f222a82343eb0bad24e5ddf8985d2a07c262

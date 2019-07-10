@@ -2,10 +2,14 @@
 # @Author: dell
 # @Date:   2019-04-28 09:22:29
 # @Last Modified by:   dell
+<<<<<<< HEAD
 # @Last Modified time: 2019-07-10 11:05:29
 
 
 #learning of pandas commit
+=======
+# @Last Modified time: 2019-04-29 16:58:28
+>>>>>>> 1ab7f222a82343eb0bad24e5ddf8985d2a07c262
 
 #bar
 # from pyecharts import Bar
