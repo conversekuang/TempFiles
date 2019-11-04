@@ -172,5 +172,23 @@ idea 提出 ---> 召开产品设计会（开发组、产品组） --->  产品�
 
 
 
+https://mp.weixin.qq.com/s/Md8JYwDgOBci7cQMZ8uryw
 
+```
+class YuanRenXue:
+"""A demo of class"""
+    name = '猿人学'
+def say_hi(self):
+        print('Hello world!')
+
+yrx = YuanRenXue()
+yrx.say_hi
+YuanRenXue.say_hi
+
+yrx.say_hi   
+# 等价于
+YuanRenXue.say_hi(yrx)
+```
+
+`yrx.say_hi`与`YuanRenXue.say_hi`并不是一回事，它是一个方法对象，不是函数对象，通俗讲，前者是实例的方法，后者是类的函数。
 

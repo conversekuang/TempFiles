@@ -105,7 +105,7 @@
 
     函数开头的三个`"`文档是函数文档(DocString)，该函数的参数类型，说明，返回值以及例子。`ctrl+q`可快速预览docstring。
 
-    `ctrl+shift+i`快捷键，可以不用跳转直接以浮窗形式显示该函数的源代码
+    `ctrl + shift + i`快捷键，可以不用跳转直接以浮窗形式显示该函数的源代码
 
 
 
@@ -115,23 +115,17 @@
 
 16. 快速定位错误行
 
-定位出现红色波浪的py文件，按`F2或shift+F2`可以快速定位错误行。
+定位出现红色波浪的py文件，按`F2 或 shift+F2`可以快速定位错误行。
 
 在settings中可以搜索key map可以找到快捷键功能
 
-
-
 17. 快速查看最近的修改
 
-Windows 是Alt+shift+C 可以快速查看最近修改的内容
-
-
+Windows 是`Alt+shift+C` 可以快速查看最近修改的内容
 
 18. 静态代码分析检查
 
-文件夹-->右键-->Inspect Code 即可开启静态检测
-
-
+文件夹 --> 右键 --> `Inspect Code` 即可开启静态检测
 
 19. 精准定位
 
@@ -171,11 +165,11 @@ Windows 是 `Alt+6`查看标记出来的TODO
 
 24. 取消折叠多行标签页
 
-    Pycharm打开多个标签页时会用数字隐藏标签，为了都显示出来，可以`Windows-> Editor Tabs ->Tabs Placement-> show Table in Single Row `
+    Pycharm打开多个标签页时会用数字隐藏标签，为了都显示出来，可以`Windows-> Editor Tabs -> Tabs Placement -> show Table in Single Row `
 
 25. 应用搜索，阅读源码
 
-    代码的入口，流程，走向特别重要。要知道哪里调用了这个类，。Mac：Command+Option+F7 ，Windows：Ctrl+Alt+F7。可以看到调用列表
+    代码的入口，流程，走向特别重要。要知道哪里调用了这个类。`Mac：Command+Option+F7 ，Windows：Ctrl+Alt+F7`。可以看到调用列表
 
 
 
@@ -197,7 +191,7 @@ Windows 是 `Alt+6`查看标记出来的TODO
 
 28. 智能补全
 
-    小写开头不能匹配大写开头的函数，变量，或者类。修改settings中code completion中选择match case，取消打钩。
+    小写开头不能匹配大写开头的函数，变量，或者类。修改`settings`中`code completion`中选择`match case`，取消打钩。
 
 29. Pycharm眼睛保护色
 

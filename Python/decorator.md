@@ -191,23 +191,24 @@
           self.num_calls = 0
   
       def __call__(self, *args, **kwargs):
->>>>>>> 1ab7f222a82343eb0bad24e5ddf8985d2a07c262
+  ```
+>1ab7f222a82343eb0bad24e5ddf8985d2a07c262
           self.num_calls += 1
           print('num of calls is: {}'.format(self.num_calls))
           return self.func(*args, **kwargs)
-  
+
   @Count
   def example():
       print("hello world")
-  
+
   example()
-  
+
   # 输出
   num of calls is: 1
   hello world
-  
+
   example()
-  
+
   # 输出
   num of calls is: 2
   hello world
@@ -225,11 +226,10 @@
   @decorator3
   def func():
       ...
+
   ```
 
   先执行最外层，依次向内执行。
-
-  
 
 #### 装饰器应用
 
@@ -243,3 +243,24 @@
 =======
 - **缓存**：python3中 from functools import rlu_cache， 可以通过@lru_cahche来缓存函数的结果 lru_cache(maxsize=128, typed=False)。maxsize参数定义缓存大小，而typed定义的是不同类型是否认为是不同结果。
 >>>>>>> 1ab7f222a82343eb0bad24e5ddf8985d2a07c262
+
+  ```
+
+
+
+
+
+
+
+装饰器的11个知识点，很全的介绍。
+
+<https://mp.weixin.qq.com/s/8z92pbhJV1ybfE6YZfvOuw>
+
+
+
+#### 10. 内置装饰器：property
+
+用`@property`装饰过的函数，会将一个函数定义成一个属性，属性的值就是该函数return的内容
+
+
+
